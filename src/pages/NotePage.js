@@ -17,6 +17,7 @@ const NotePage = () => {
 
   useEffect(() => {
     getNote();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
   let getNote = async () => {
     if (id === "new") return;
